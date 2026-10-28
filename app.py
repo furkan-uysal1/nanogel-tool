@@ -55,9 +55,6 @@ st.title("Nanogel Clinical Decision System")
 
 st.markdown("Clinical + Research Simulation Tool")
 
-# -------------------------
-# METHODS
-# -------------------------
 st.subheader("Methods & Model Assumptions")
 
 st.markdown("""
@@ -78,9 +75,6 @@ Limitations:
 - No patient-specific calibration
 """)
 
-# -------------------------
-# INPUT + OUTPUT LAYOUT
-# -------------------------
 col1, col2 = st.columns([1, 2])
 
 with col1:
@@ -109,9 +103,7 @@ with col2:
         else:
             st.success("LOW RISK")
 
-        # -------------------------
-        # INTERPRETATION
-        # -------------------------
+        
         st.subheader("Interpretation")
 
         st.info("""
@@ -119,9 +111,6 @@ Higher stenosis increases nanogel concentration and tissue stiffness.
 This suggests predictable vascular response suitable for adaptive delivery systems.
 """)
 
-        # -------------------------
-        # ISEF GRAPH (IMPROVED)
-        # -------------------------
         st.subheader("Dose-Response Curve (Stenosis vs Nanogel Response)")
 
         s_vals = np.linspace(10, 80, 20)
